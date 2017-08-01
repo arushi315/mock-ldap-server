@@ -25,7 +25,6 @@ public class MockLdapServer {
 
     @Bean
     public ApacheDSContainer apacheDSContainerSetup() {
-        System.out.println(this.getClass().getCanonicalName());
         ApacheDSContainer apacheDSContainer = null;
         try {
             apacheDSContainer = new ApacheDSContainer("dc=memldap,dc=org", LDAP_LDIF_PATH);
